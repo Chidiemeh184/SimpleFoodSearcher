@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0700481F3CD65400772612 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700471F3CD65400772612 /* Recipe.swift */; };
+		EF07004A1F3D118000772612 /* HomeFoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */; };
 		EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1296091F3CC26B00F9A784 /* AppDelegate.swift */; };
-		EF12960C1F3CC26B00F9A784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12960B1F3CC26B00F9A784 /* ViewController.swift */; };
 		EF12960F1F3CC26B00F9A784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF12960D1F3CC26B00F9A784 /* Main.storyboard */; };
 		EF1296111F3CC26B00F9A784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1296101F3CC26B00F9A784 /* Assets.xcassets */; };
 		EF1296141F3CC26B00F9A784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1296121F3CC26B00F9A784 /* LaunchScreen.storyboard */; };
+		EF1296201F3CC3B000F9A784 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12961F1F3CC3B000F9A784 /* NetworkProcessor.swift */; };
+		EF1296221F3CC3FD00F9A784 /* RecipeFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1296211F3CC3FD00F9A784 /* RecipeFetchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF0700471F3CD65400772612 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFoodSearchViewController.swift; sourceTree = "<group>"; };
 		EF1296061F3CC26B00F9A784 /* SimpleFoodSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFoodSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1296091F3CC26B00F9A784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF12960B1F3CC26B00F9A784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF12960E1F3CC26B00F9A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF1296101F3CC26B00F9A784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1296131F3CC26B00F9A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1296151F3CC26B00F9A784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF12961F1F3CC3B000F9A784 /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		EF1296211F3CC3FD00F9A784 /* RecipeFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFetchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		EF1296081F3CC26B00F9A784 /* SimpleFoodSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				EF12961D1F3CC2F500F9A784 /* Controller */,
+				EF12961C1F3CC2E800F9A784 /* View */,
+				EF12961B1F3CC2D700F9A784 /* Model */,
 				EF1296091F3CC26B00F9A784 /* AppDelegate.swift */,
-				EF12960B1F3CC26B00F9A784 /* ViewController.swift */,
-				EF12960D1F3CC26B00F9A784 /* Main.storyboard */,
 				EF1296101F3CC26B00F9A784 /* Assets.xcassets */,
 				EF1296121F3CC26B00F9A784 /* LaunchScreen.storyboard */,
 				EF1296151F3CC26B00F9A784 /* Info.plist */,
 			);
 			path = SimpleFoodSearcher;
+			sourceTree = "<group>";
+		};
+		EF12961B1F3CC2D700F9A784 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF12961E1F3CC33200F9A784 /* Network Stack */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF12961C1F3CC2E800F9A784 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF12960D1F3CC26B00F9A784 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF12961D1F3CC2F500F9A784 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF12961E1F3CC33200F9A784 /* Network Stack */ = {
+			isa = PBXGroup;
+			children = (
+				EF12961F1F3CC3B000F9A784 /* NetworkProcessor.swift */,
+				EF1296211F3CC3FD00F9A784 /* RecipeFetchService.swift */,
+				EF0700471F3CD65400772612 /* Recipe.swift */,
+			);
+			path = "Network Stack";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF12960C1F3CC26B00F9A784 /* ViewController.swift in Sources */,
+				EF07004A1F3D118000772612 /* HomeFoodSearchViewController.swift in Sources */,
+				EF1296201F3CC3B000F9A784 /* NetworkProcessor.swift in Sources */,
+				EF1296221F3CC3FD00F9A784 /* RecipeFetchService.swift in Sources */,
 				EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */,
+				EF0700481F3CD65400772612 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

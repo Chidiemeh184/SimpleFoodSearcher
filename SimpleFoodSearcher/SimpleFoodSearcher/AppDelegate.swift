@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+    let testFetch = RecipeFetchService()
+//        testFetch.fetchRecipe(withIngredients: "onions,garlic") {
+//            result in 
+//        }
+//        
+//        testFetch.fetcRecipe(withRecipeName: "Banana+bread") { (result) in
+//            //
+//        }
+        
+        
         return true
     }
 
