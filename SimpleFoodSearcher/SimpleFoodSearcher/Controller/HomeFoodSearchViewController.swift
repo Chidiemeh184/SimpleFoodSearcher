@@ -24,7 +24,7 @@ class HomeFoodSearchViewController: UIViewController {
         
     }
     
-    //Get Food Tapped
+    //Get Recipes when Tapped
     @IBAction func getFoodTapped(_ sender: Any) {
         
         let fetcher = RecipeFetchService()
@@ -78,6 +78,10 @@ class HomeFoodSearchViewController: UIViewController {
         resultCountButton.titleLabel?.text = "Results: "
     }
     
+    //Dismiss TextFields
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     //Populate Recipe For TableView
     func populateNextViewWithRecipes(recipes: [Recipe]){

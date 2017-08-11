@@ -16,7 +16,6 @@ class RecipeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     // MARK: - Table view data source
@@ -47,13 +46,20 @@ class RecipeTableViewController: UITableViewController {
     navigationController?.popViewController(animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      //  performSegue(withIdentifier: "toWebView", sender: indexPath)
     }
-    */
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toWebView" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let webViewVC = segue.destination as? WebViewController
+                webViewVC?.urlString = recipes[indexPath.row].href
+            }
+            
+        }
+    }
+    
 
 }

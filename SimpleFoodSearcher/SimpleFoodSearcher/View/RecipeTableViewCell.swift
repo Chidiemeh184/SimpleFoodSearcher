@@ -26,7 +26,7 @@ class RecipeTableViewCell: UITableViewCell {
 
     func setRecipe(withRecipe: Recipe){
         
-        //TODO: Work on Getting imaged to show
+        //TODO: Work on getting ingredients to show
         
         if let thumbnailURL = URL(string: withRecipe.thumbnail!) {
             let imageUrl = thumbnailURL
@@ -42,7 +42,8 @@ class RecipeTableViewCell: UITableViewCell {
         }
 
         titleLabel.text = withRecipe.title
-        ingredientLabel.text = withRecipe.ingredients?.description
+        ingredientLabel.text? = withRecipe.ingredients!
+            
         siteLabel.text = withRecipe.href
         
     }

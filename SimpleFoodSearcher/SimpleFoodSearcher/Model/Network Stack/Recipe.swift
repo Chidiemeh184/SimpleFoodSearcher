@@ -11,7 +11,7 @@ import Foundation
 //from Recipe Puppy API
 class Recipe {
     
-    let ingredients : [String]?
+    let ingredients : String?
     let title : String?
     let href : String?
     let thumbnail : String?
@@ -25,7 +25,7 @@ class Recipe {
     
     
     init(withDictionary: [String : Any]){
-        ingredients = withDictionary[recipeAPIKeys.ingredients] as? [String]
+        ingredients = withDictionary[recipeAPIKeys.ingredients] as? String
         title = withDictionary[recipeAPIKeys.title] as? String
         href = withDictionary[recipeAPIKeys.href] as? String
         thumbnail = withDictionary[recipeAPIKeys.thumbnail] as? String

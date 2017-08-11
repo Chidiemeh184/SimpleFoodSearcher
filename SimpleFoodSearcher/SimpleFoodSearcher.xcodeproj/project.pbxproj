@@ -11,6 +11,7 @@
 		EF07004A1F3D118000772612 /* HomeFoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */; };
 		EF07004C1F3D201300772612 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF07004B1F3D201300772612 /* RecipeTableViewController.swift */; };
 		EF07004E1F3D20C900772612 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF07004D1F3D20C900772612 /* RecipeTableViewCell.swift */; };
+		EF0700521F3D4D5400772612 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700511F3D4D5400772612 /* WebViewController.swift */; };
 		EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1296091F3CC26B00F9A784 /* AppDelegate.swift */; };
 		EF12960F1F3CC26B00F9A784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF12960D1F3CC26B00F9A784 /* Main.storyboard */; };
 		EF1296111F3CC26B00F9A784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1296101F3CC26B00F9A784 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		EF07004B1F3D201300772612 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		EF07004D1F3D20C900772612 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		EF07004F1F3D2DF200772612 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		EF0700511F3D4D5400772612 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EF1296061F3CC26B00F9A784 /* SimpleFoodSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFoodSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1296091F3CC26B00F9A784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF12960E1F3CC26B00F9A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */,
 				EF07004B1F3D201300772612 /* RecipeTableViewController.swift */,
+				EF0700511F3D4D5400772612 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				EF07004C1F3D201300772612 /* RecipeTableViewController.swift in Sources */,
 				EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */,
 				EF0700481F3CD65400772612 /* Recipe.swift in Sources */,
+				EF0700521F3D4D5400772612 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = SimpleFoodSearcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.chidiemeh184.SimpleFoodSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = SimpleFoodSearcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.chidiemeh184.SimpleFoodSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
