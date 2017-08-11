@@ -29,6 +29,8 @@ class NetworkProcessor {
     typealias jsonCompletionHandler = ( ([String : Any]?)-> Void )
     typealias dataCompletionHandler = ((Data?)-> Void)
     
+    //TODO: Refactor DRY Code
+    
     //Downloads data from url with completion to pass serialized object to
     //the caller
     func downloadJSONData(completion: @escaping jsonCompletionHandler){

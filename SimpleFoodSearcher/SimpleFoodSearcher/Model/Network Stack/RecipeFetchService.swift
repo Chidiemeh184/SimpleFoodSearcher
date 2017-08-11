@@ -28,6 +28,8 @@ class RecipeFetchService {
     let baseURL = "http://www.recipepuppy.com/api/"
     typealias recipeResultDictionary = ([Recipe])-> Void
     
+    //TODO: Refactor DRY Code
+    
     //Returns Recipes for provided ingredients by a completion block
     //Ingredients must be an parsed comma separated value string
     //already processed by the provider
