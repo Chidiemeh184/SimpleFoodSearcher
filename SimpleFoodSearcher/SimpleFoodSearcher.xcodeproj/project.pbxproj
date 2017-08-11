@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EF0700481F3CD65400772612 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700471F3CD65400772612 /* Recipe.swift */; };
 		EF07004A1F3D118000772612 /* HomeFoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */; };
+		EF07004C1F3D201300772612 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF07004B1F3D201300772612 /* RecipeTableViewController.swift */; };
+		EF07004E1F3D20C900772612 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF07004D1F3D20C900772612 /* RecipeTableViewCell.swift */; };
 		EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1296091F3CC26B00F9A784 /* AppDelegate.swift */; };
 		EF12960F1F3CC26B00F9A784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF12960D1F3CC26B00F9A784 /* Main.storyboard */; };
 		EF1296111F3CC26B00F9A784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1296101F3CC26B00F9A784 /* Assets.xcassets */; };
@@ -20,6 +22,9 @@
 /* Begin PBXFileReference section */
 		EF0700471F3CD65400772612 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFoodSearchViewController.swift; sourceTree = "<group>"; };
+		EF07004B1F3D201300772612 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		EF07004D1F3D20C900772612 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		EF07004F1F3D2DF200772612 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		EF1296061F3CC26B00F9A784 /* SimpleFoodSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFoodSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1296091F3CC26B00F9A784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF12960E1F3CC26B00F9A784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0700501F3D2E0A00772612 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EF07004F1F3D2DF200772612 /* placeholder.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		EF1295FD1F3CC26B00F9A784 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +78,7 @@
 				EF12961B1F3CC2D700F9A784 /* Model */,
 				EF1296091F3CC26B00F9A784 /* AppDelegate.swift */,
 				EF1296101F3CC26B00F9A784 /* Assets.xcassets */,
+				EF0700501F3D2E0A00772612 /* Images */,
 				EF1296121F3CC26B00F9A784 /* LaunchScreen.storyboard */,
 				EF1296151F3CC26B00F9A784 /* Info.plist */,
 			);
@@ -83,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EF12960D1F3CC26B00F9A784 /* Main.storyboard */,
+				EF07004D1F3D20C900772612 /* RecipeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0700491F3D118000772612 /* HomeFoodSearchViewController.swift */,
+				EF07004B1F3D201300772612 /* RecipeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +195,8 @@
 				EF07004A1F3D118000772612 /* HomeFoodSearchViewController.swift in Sources */,
 				EF1296201F3CC3B000F9A784 /* NetworkProcessor.swift in Sources */,
 				EF1296221F3CC3FD00F9A784 /* RecipeFetchService.swift in Sources */,
+				EF07004E1F3D20C900772612 /* RecipeTableViewCell.swift in Sources */,
+				EF07004C1F3D201300772612 /* RecipeTableViewController.swift in Sources */,
 				EF12960A1F3CC26B00F9A784 /* AppDelegate.swift in Sources */,
 				EF0700481F3CD65400772612 /* Recipe.swift in Sources */,
 			);

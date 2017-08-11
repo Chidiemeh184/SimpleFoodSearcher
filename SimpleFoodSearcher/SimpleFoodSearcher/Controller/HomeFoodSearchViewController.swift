@@ -66,7 +66,7 @@ class HomeFoodSearchViewController: UIViewController {
         
     }
     
-    
+    //Reset the fields and Button state
     @IBAction func resetButtonTapped(_ sender: Any) {
         foodNameTextField.text = ""
         foodNameTextField.placeholder = "Eg: Banana or Banana+bread"
@@ -79,13 +79,24 @@ class HomeFoodSearchViewController: UIViewController {
     }
     
     
-    
-    //Show Result Tapped
-    @IBAction func showResultTapped(_ sender: Any) {
-        
+    //Populate Recipe For TableView
+    func populateNextViewWithRecipes(recipes: [Recipe]){
+        let tableVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecipeTableViewController")
     }
     
     
+    //Show Result Tapped
+    @IBAction func showResultTapped(_ sender: Any) {
+       // performSegue(withIdentifier: "toTableView", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toTableView" {
+            if let destinationVC = segue.destination as? RecipeTableViewController {
+                destinationVC.recipes = self.recipes
+            }
+        }
+    }
 
 
 }
